@@ -1,0 +1,92 @@
+h2{
+    background-color: #c0262c;
+    color: #fff;
+    font-size: 2.5em;
+    letter-spacing: .1em;
+    width: 470px;
+    background-image: url(imagens/importante-saber.jpg), url(imagens/back-bolinha.gif);
+    background-repeat: no-repeat, repeat;
+    background-position: center right,center center;
+    padding: 61px, 400xpx,61p,100px ;
+
+}
+figure{
+    border: #c0262c solid thin;
+    text-align: center;
+    padding: 20px 0 0;
+    border-radius: 35px 35px 0 0;
+
+}
+figcaption{
+    background-color: #c0262c;
+    padding: 7px 0;
+    color: #fff;
+    font-size: 1.5em;
+}
+ul{
+    list-style-type: none;
+    list-style-image: url(imagens/ossinho.png);
+    list-style-position: inside;
+    margin: 20px 0;
+
+}
+
+    /* ESTILIZANDO A LISTA DE DESCRIÇÃO*/
+    dt{
+        background-color: #c0262c;
+        color: #fff;
+        padding: 7px;
+    }
+
+    dd{
+        margin-top: 3px;
+        border: #c0262c solid 2px;
+        margin-bottom: 2px;
+        border-radius: 0 0 25px 25px;
+
+        /* VALORES DO PADDING
+        /*1º valor superior 2º valor esquerda
+        3º valor inferior 4º valir direita*/
+        padding: 20px 20px 0; 
+    }
+    dd a[target="_blank"]{
+
+        text-decoration: none;
+        color: #c0262c;
+        font-weight: bold;
+        padding: 7px;
+        display: inline-block;
+    }
+    dd a[target="_blank"]:hover{
+    text-decoration: underline;
+
+    }
+    dd a[href="#topo"]{
+        text-decoration:none ;
+        color: #c0262c;
+        font-weight: bold;
+        padding: 7px 0 7px 30px;
+        background: url(imagens/seta-voltar.png) no-repeat left center;
+    }
+    dd a[href="#topo"]:hover{
+    text-decoration: underline;
+    background: url (imagens/seta-voltar-hover.png)no-repeat left center;
+    }
+
+    ol{
+        list-style-type: none;
+        white-space: pre; /*controle de espaços em branco dos elementos*/
+        line-height: .9em;
+        counter-reset: ;
+    }
+    ol li:before{
+        /*Incrimentar/acrescentar mais 1 à variável*/
+        counter-increment: contador;
+
+        /*usar o número do contador como conteúdo das linhas*/
+        content: "Questão" counter(contador) " \261B ";
+
+        color: #c0262c;
+        font-weight: bold;
+
+    }
